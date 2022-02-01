@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+body { 
+    background-color: black;
+}
+#cronometro {
+    margin: auto;
+    max-width: 600px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.numeros {
+    max-width: 80px;
+    height: 100px;
+    font-size: 3em;
+    text-align: center;
+    color: gray;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+
+#cronometro > div > span {
+    font-size: 1.5em;    
+    color: gray;
+    padding: 5px;
+}
+
+#cronometro > div {
+    display: inline;
+    text-align: center;
+    max-width: 100%;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#btn {
+    max-width: 150px;
+    padding: 8px 30px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-60%);
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#btn:hover {
+    background-color: gray; 
+    transition-duration: 0.6s;
+}
+
+#res {
+    max-width: 150px;
+    padding: 2px 8px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-54%);
+}
+
+#res > h1 {
+    color: green;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width:601px) {
+
+    .numeros {
+        max-width: 65px;
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 578px){
+
+    .numeros {
+        max-width: 50px;
+        font-size: 2em;
+    }
+
+    #btn {
+        padding: 8px 30px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%);
+    }
+
+    #res {
+        max-width: 150px;
+        padding: 2px 8px;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-54%);
+    }
+
+}
+
+@media (max-width:577px){
+
+    #cronometro > div{
+        max-width: 150px;
+    }
+
+    .numeros{
+        max-width: 50px;
+        font-size: 1em;
+    }
+
+    #btn {
+        padding: 8px 30px;
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%);
+    }
+
+    #res {
+        max-width: 150px;
+        padding: 2px 8px;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-54%);
+    }
+}
+
+@media (max-width:366px){
+
+    #cronometro > div{
+        max-width: 90px;
+    }
+
+    .numeros{
+        max-width: 26.5px;
+        font-size: 1.6em;
+    }
+
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <section id="cronometro">
+
+        <div class="horas">
+            <h3>Horas</h3>
+            <input type="number" id="h1" class="numeros" placeholder="0" max="9" min="0" value="0">
+            <input type="number" id="h2" class="numeros" placeholder="0" max="9" min="0" value="0"><span>:</span>
+        </div>
+
+        <div class="minutos">
+            <h3>Minutos</h3>
+            <input type="number" id="m1" class="numeros" placeholder="0" max="9" min="0" value="0">
+            <input type="number" id="m2" class="numeros" placeholder="0" max="9" min="0" value="0"><span>:</span>
+        </div>
+
+        <div class="segundos">
+            <h3>Segundos</h3>
+            <input type="number" id="s1" class="numeros" placeholder="0" max="9" min="0" value="0">
+            <input type="number" id="s2" class="numeros" placeholder="0" max="9" min="0" value="0">
+        </div>
+
+    </section>
+
+    <input type="button" value="Iniciar" id="btn" onclick="iniciar()">
+
+    <div id="res">
+        <h1 id="timer"></h1>
+        <h1 id="finish"></h1>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
